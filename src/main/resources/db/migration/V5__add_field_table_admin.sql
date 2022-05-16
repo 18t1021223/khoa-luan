@@ -1,0 +1,1 @@
+alter table admin add address varchar(255);

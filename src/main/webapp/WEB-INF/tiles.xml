@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- master -->
+    <definition name="master.user.layout" template="/WEB-INF/jsp/user/layout/user.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/user/base/_header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/jsp/user/base/_footer.jsp"/>
+    </definition>
+
+    <!-- home -->
+    <definition name="home" extends="master.user.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/body/_home.jsp"/>
+    </definition>
+
+    <!-- post -->
+    <definition name="post" extends="master.user.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/body/_post.jsp"/>
+    </definition>
+
+    <!-- error page -->
+    <definition name="error_page" template="/WEB-INF/jsp/error_page.jsp">
+        <put-attribute name="title" value="Error"/>
+    </definition>
+
+    <!-- admin master -->
+    <definition name="master.admin.layout" template="/WEB-INF/jsp/admin/layout/admin.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/admin/base/_header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="page-search" value="/WEB-INF/jsp/admin/base/_search.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/jsp/admin/base/_footer.jsp"/>
+    </definition>
+
+    <!-- admin home -->
+    <definition name="admin-home" extends="master.admin.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_home.jsp"/>
+    </definition>
+
+    <!-- admin login -->
+    <definition name="admin-login" extends="master.admin.layout">
+        <put-attribute name="header" value="/WEB-INF/jsp/admin/base/_header_login.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_login.jsp"/>
+    </definition>
+
+    <!-- admin post -->
+    <definition name="admin-post" extends="master.admin.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_post.jsp"/>
+    </definition>
+
+    <!-- admin post single-->
+    <definition name="admin-post-single" extends="master.admin.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_post_single.jsp"/>
+    </definition>
+
+    <!-- admin category -->
+    <definition name="admin-category" extends="master.admin.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_category.jsp"/>
+    </definition>
+
+    <!-- admin tag -->
+    <definition name="admin-tag" extends="master.admin.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_tag.jsp"/>
+    </definition>
+
+    <!-- admin register -->
+    <definition name="admin-register" extends="master.admin.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_register.jsp"/>
+    </definition>
+
+    <!-- admin change password -->
+    <definition name="admin-change-password" extends="master.admin.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_change_password.jsp"/>
+    </definition>
+
+    <!-- admin-new-password -->
+    <definition name="admin-new-password" extends="master.admin.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_new_password.jsp"/>
+    </definition>
+
+    <definition name="admin-forgot-password" extends="master.admin.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_forgot-password.jsp"/>
+    </definition>
+
+    <!-- admin host -->
+    <definition name="host" extends="master.admin.layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/body/_admin.jsp"/>
+    </definition>
+</tiles-definitions>

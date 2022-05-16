@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite
+        PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite3.0.dtd">
+
+<urlrewrite>
+    <rule>
+        <name>SEO Redirect and Secure Channel</name>
+        <condition name="host" operator="equal">^laptrinhcs.com</condition>
+        <from>^(.*)$</from>
+        <to type="permanent-redirect">https://www.laptrinhcs.com$1</to>
+    </rule>
+</urlrewrite>
